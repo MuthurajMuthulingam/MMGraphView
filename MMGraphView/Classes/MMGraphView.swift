@@ -13,8 +13,8 @@ import UIKit
 public class MMGraphView: UIView {
     
     // MARK: - Private Properties
-    private lazy var currentPoints: [CGPoint] = []
-    private var currentTheme: MMGraphTheme = MMGraphTheme() {
+    public lazy var currentPoints: [CGPoint] = []
+    public var currentTheme: MMGraphTheme = MMGraphTheme() {
         didSet {
             // redraw graph
            layoutIfNeeded()
@@ -27,8 +27,8 @@ public class MMGraphView: UIView {
             offSet = currentTheme.graphPadding
         }
     }
-    private lazy var rawPoints: [CGPoint] = []
-    private lazy var configuaration: MMGraphConfiguration = MMGraphConfiguration()
+    public lazy var rawPoints: [CGPoint] = []
+    public lazy var configuaration: MMGraphConfiguration = MMGraphConfiguration()
     private lazy var graphView: UIView = UIView()
     var offSet: CGFloat = 30 // default
     lazy var pointLayers = [CAShapeLayer]()

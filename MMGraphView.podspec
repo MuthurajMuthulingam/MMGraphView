@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MMGraphView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MMGraphView.'
+  s.summary          = 'Render Graph on screen using Bezier Path and Bezier Curve'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,20 +17,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Simple component to have a graph rendered on screen using bezier path and bezier curve.'
 
-  s.homepage         = 'https://github.com/Muthuraj Muthulingam/MMGraphView'
+  s.homepage         = 'https://github.com/MuthurajMuthulingam/MMGraphView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Muthuraj Muthulingam' => 'muthurajmuthulingam@gmail.com' }
-  s.source           = { :git => 'https://github.com/Muthuraj Muthulingam/MMGraphView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MuthurajMuthulingam/MMGraphView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MMGraphView/Classes/**/*'
+  s.swift_version = '4.1'
   
   # s.resource_bundles = {
   #   'MMGraphView' => ['MMGraphView/Assets/*.png']
