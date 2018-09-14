@@ -1,0 +1,22 @@
+{
+  "name": "MMGraphView",
+  "version": "0.1.0",
+  "summary": "A short description of MMGraphView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Muthuraj Muthulingam/MMGraphView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Muthuraj Muthulingam": "muthurajmuthulingam@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Muthuraj Muthulingam/MMGraphView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MMGraphView/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - MMGraphView (0.1.0)
+
+DEPENDENCIES:
+  - MMGraphView (from `../`)
+
+EXTERNAL SOURCES:
+  MMGraphView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MMGraphView: 76e2324e5caa729ae534e5d8ca853e5cfe8f9353
+
+PODFILE CHECKSUM: 38733e01de63f4fb0fcc14f6976de1be72779c90
+
+COCOAPODS: 1.5.3

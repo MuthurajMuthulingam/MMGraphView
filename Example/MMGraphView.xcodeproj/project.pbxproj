@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		26C73BCA371549B3E4BF414D /* Pods-MMGraphView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGraphView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMGraphView_Tests/Pods-MMGraphView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		43413CB1D0A57E2A45A09E52 /* Pods-MMGraphView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGraphView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMGraphView_Example/Pods-MMGraphView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5248A0DC2E4F9C6868E4D28F /* MMGraphView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MMGraphView.podspec; path = ../MMGraphView.podspec; sourceTree = "<group>"; };
+		5248A0DC2E4F9C6868E4D28F /* MMGraphView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MMGraphView.podspec; path = ../MMGraphView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* MMGraphView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMGraphView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8CF9ED880E42AAA97F3EEF19 /* Pods_MMGraphView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMGraphView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C079F6EF90DFDADB176F69E /* Pods_MMGraphView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMGraphView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A48FFE75674AF54A9CC79437 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A48FFE75674AF54A9CC79437 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A99B3D53DB619A4A9F3FD365 /* Pods-MMGraphView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGraphView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMGraphView_Tests/Pods-MMGraphView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E99D399EAF39DA2E674A19B2 /* Pods-MMGraphView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGraphView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMGraphView_Example/Pods-MMGraphView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EF85895FF1304337FFD0417F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EF85895FF1304337FFD0417F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

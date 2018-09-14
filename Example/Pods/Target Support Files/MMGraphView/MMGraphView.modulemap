@@ -1,0 +1,6 @@
+framework module MMGraphView {
+  umbrella header "MMGraphView-umbrella.h"
+
+  export *
+  module * { export * }
+}
