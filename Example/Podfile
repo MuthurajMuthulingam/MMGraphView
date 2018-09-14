@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MMGraphView_Example' do
+  pod 'MMGraphView', :path => '../'
+
+  target 'MMGraphView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
