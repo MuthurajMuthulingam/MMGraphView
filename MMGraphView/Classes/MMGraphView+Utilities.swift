@@ -92,6 +92,13 @@ public struct MMGraphShadow: MMShadowRules {
     public var opacity: Float
     public var offSet: CGSize
     public var radius: Double
+    
+    public init(color: UIColor, opacity: Float, offSet: CGSize, radius: Double) {
+        self.color = color
+        self.opacity = opacity
+        self.offSet = offSet
+        self.radius = radius
+    }
 }
 
 public protocol MMGraphTextThemeRules {
@@ -102,6 +109,15 @@ public protocol MMGraphTextThemeRules {
 public struct MMGraphTextTheme: MMGraphTextThemeRules {
     public var color: UIColor = UIColor.white
     public var font: UIFont = UIFont.systemFont(ofSize: 10)
+    
+    public init(color: UIColor, font: UIFont) {
+        self.color = color
+        self.font = font
+    }
+    
+    public init() {
+        // default initializer
+    }
 }
 
 public protocol MMGraphThemeShadowRules {
@@ -117,6 +133,16 @@ public struct MMGraphLineTheme: MMGraphLineThemeRules {
     public var lineWidth: CGFloat = 4.0
     public var shadow: MMGraphShadow? = MMGraphShadow(color: UIColor.black, opacity: 0.5, offSet: CGSize(width: 0, height: 8), radius: 6.0)
     public var lineColor: UIColor = UIColor.yellow
+    
+    public init() {
+        // default initializer
+    }
+    
+    public init(lineWidth: CGFloat, shadow: MMGraphShadow?, lineColor: UIColor) {
+        self.lineWidth = lineWidth
+        self.shadow = shadow
+        self.lineColor = lineColor
+    }
 }
 
 public protocol MMGraphDotThemeRules: MMGraphThemeShadowRules {
@@ -130,6 +156,17 @@ public struct MMGraphDotCircleTheme: MMGraphDotThemeRules {
     public var fillColor: UIColor = UIColor.clear
     public var borderWidth: CGFloat = 0.0
     public var shadow: MMGraphShadow? = MMGraphShadow(color: UIColor.black, opacity: 0.7, offSet: CGSize(width: 0, height: 2), radius: 3.0)
+    
+    public init() {
+        // default initializer
+    }
+    
+    public init(content: Any?, fillColor: UIColor, borderWidth: CGFloat, shadow: MMGraphShadow?) {
+        self.contents = content
+        self.fillColor = fillColor
+        self.borderWidth = borderWidth
+        self.shadow = shadow
+    }
 }
 
 public protocol MMGraphInfoThemeRules {
@@ -142,6 +179,16 @@ public struct MMGraphInfoTheme: MMGraphInfoThemeRules {
     public var dotCircleTheme: MMGraphDotCircleTheme = MMGraphDotCircleTheme()
     public var textTheme: MMGraphTextTheme = MMGraphTextTheme()
     public var padding: CGFloat = 15
+    
+    public init() {
+        // default initialiser
+    }
+    
+    public init(dotCircleTheme: MMGraphDotCircleTheme, textTheme: MMGraphTextTheme, padding: CGFloat) {
+        self.dotCircleTheme = dotCircleTheme
+        self.textTheme = textTheme
+        self.padding = padding
+    }
 }
 
 public protocol MMGraphThemeRules {
@@ -158,6 +205,18 @@ public struct MMGraphTheme: MMGraphThemeRules {
     public var backgroundColor: UIColor = UIColor.clear
     public var backgroundImage: UIImage? = nil
     public var lineTheme: MMGraphLineTheme? = MMGraphLineTheme()
+    
+    public init() {
+        // default initialiser
+    }
+    
+    public init(infoTheme: MMGraphInfoTheme?, graphPadding: CGFloat, backgroundColor: UIColor, backgroundImage: UIImage?, lineTheme: MMGraphLineTheme) {
+        self.infoTheme = infoTheme
+        self.graphPadding = graphPadding
+        self.backgroundColor = backgroundColor
+        self.backgroundImage = backgroundImage
+        self.lineTheme = lineTheme
+    }
 }
 
 // MARK: - Shadow Theme Extensions
@@ -177,8 +236,8 @@ public extension MMGraphDotCircleTheme {
            layer.bounds = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
         } else {
            layer.fillColor = self.fillColor.cgColor
+            layer.borderWidth = self.borderWidth
         }
-        layer.borderWidth = self.borderWidth
     }
 }
 

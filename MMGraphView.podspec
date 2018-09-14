@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMGraphView'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Render Graph on screen using Bezier Path and Bezier Curve'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/MuthurajMuthulingam/MMGraphView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'MMGraphView/Classes/**/*'
   s.swift_version = '4.1'

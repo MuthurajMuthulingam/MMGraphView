@@ -13,8 +13,8 @@ import UIKit
 public class MMGraphView: UIView {
     
     // MARK: - Private Properties
-    public lazy var currentPoints: [CGPoint] = []
-    public var currentTheme: MMGraphTheme = MMGraphTheme() {
+    private lazy var currentPoints: [CGPoint] = []
+    private var currentTheme: MMGraphTheme = MMGraphTheme() {
         didSet {
             // redraw graph
            layoutIfNeeded()
@@ -27,8 +27,8 @@ public class MMGraphView: UIView {
             offSet = currentTheme.graphPadding
         }
     }
-    public lazy var rawPoints: [CGPoint] = []
-    public lazy var configuaration: MMGraphConfiguration = MMGraphConfiguration()
+    private lazy var rawPoints: [CGPoint] = []
+    private lazy var configuaration: MMGraphConfiguration = MMGraphConfiguration()
     private lazy var graphView: UIView = UIView()
     var offSet: CGFloat = 30 // default
     lazy var pointLayers = [CAShapeLayer]()
@@ -104,8 +104,8 @@ public class MMGraphView: UIView {
         
         for (index, point) in points.enumerated() {
             let dotCircleLayer = CAShapeLayer(with: UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: 12, height: 12)).cgPath,
-                                              color: UIColor.clear,
-                                              fillColor: UIColor(white: 248.0/255.0, alpha: 0.5),
+                                              color: .clear,
+                                              fillColor: .clear,
                                               lineWidth: 0.0)
             dotCircleLayer.bounds = CGRect(x: 0, y: 0, width: 12, height: 12)
             dotCircleLayer.position = point
