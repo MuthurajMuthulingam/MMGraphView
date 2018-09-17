@@ -123,7 +123,6 @@ public class MMGraphView: UIView {
     }
 
     private func prepareGraphView() {
-        graphView.backgroundColor = UIColor.red
         self.addSubview(graphView)
         // set consstriants
         graphView.setConstraintRelativeSize(relatedSuperView: self, offset: offSet)

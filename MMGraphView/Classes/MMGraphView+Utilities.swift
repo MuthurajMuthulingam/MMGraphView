@@ -27,7 +27,7 @@ extension MMGraphView {
     private func xAxisPoints(from points: [CGFloat]) -> [CGFloat] {
         var xAxisPoints = [CGFloat]()
         for i in 0..<points.count {
-            let val = (CGFloat(i)/CGFloat(points.count)) * (self.frame.width - (offSet*2))
+            let val = (CGFloat(i)/CGFloat(points.count)) * (self.frame.width - offSet)
             xAxisPoints.append(val)
         }
         return xAxisPoints
@@ -50,7 +50,7 @@ extension MMGraphView {
             return point.y
         }
         let normaliseXAxisPoints = normalise(against: self.frame.size.width - (offSet*2), points: xPoints)
-        let normaliseYAxisPoints = normalise(against: self.frame.size.height - (offSet*4), points: yPoints)
+        let normaliseYAxisPoints = normalise(against: self.frame.size.height - (offSet*2), points: yPoints)
         let xAxisPoints = self.xAxisPoints(from: normaliseXAxisPoints)
         let yAxisPoints = self.yAxisPoints(from: normaliseYAxisPoints)
         var graphPoints: [CGPoint] = []
