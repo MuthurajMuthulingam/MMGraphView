@@ -17,7 +17,7 @@ public class MMGraphView: UIView {
     private var currentTheme: MMGraphTheme = MMGraphTheme() {
         didSet {
             // redraw graph
-           layoutIfNeeded()
+           layoutSubviews()
            // set background
             graphView.backgroundColor = currentTheme.backgroundColor
             if let bgImage = currentTheme.backgroundImage {
