@@ -30,4 +30,4 @@ Muthuraj Muthulingam, muthurajmuthulingam@gmail.com
 
 MMGraphView is available under the MIT license. See the LICENSE file for more info.
 
-Courtasy : https://github.com/Ramshandilya
+Courtesy : https://github.com/Ramshandilya
