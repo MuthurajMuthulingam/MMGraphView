@@ -1,5 +1,5 @@
 # MMGraphView
-![MMGraph Demo](https://raw.githubusercontent.com/MuthurajMuthulingam/MMGraphView/blob/master/MMGraphDemo.gif)
+![MMGraph Demo](https://github.com/MuthurajMuthulingam/MMGraphView/blob/master/MMGraphDemo.gif)
 
 
 [![CI Status](https://img.shields.io/travis/Muthuraj Muthulingam/MMGraphView.svg?style=flat)](https://travis-ci.org/Muthuraj Muthulingam/MMGraphView)
